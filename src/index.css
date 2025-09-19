@@ -150,12 +150,36 @@
     animation: slideUp 0.8s ease-out;
   }
   
+  .animate-slide-in-left {
+    animation: slide-in-left 0.7s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slide-in-right 0.7s ease-out;
+  }
+  
   .animate-scale-in {
     animation: scaleIn 0.5s ease-out;
   }
   
+  .animate-bounceIn {
+    animation: bounceIn 0.8s ease-out;
+  }
+  
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+  
+  .animate-rotate-slow {
+    animation: rotate-slow 20s linear infinite;
+  }
+  
+  .animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
   }
   
   .hover-lift {
@@ -167,6 +191,22 @@
     box-shadow: var(--shadow-lg);
   }
   
+  .hover-scale {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover-rotate {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-rotate:hover {
+    transform: rotate(5deg);
+  }
+  
   .gradient-text {
     background: var(--gradient-hero);
     -webkit-background-clip: text;
@@ -174,10 +214,68 @@
     background-clip: text;
   }
   
+  .gradient-bg {
+    background: var(--gradient-hero);
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+  }
+  
   .glass-card {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .paint-dot {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  
+  .paint-dot-1 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, hsl(217 91% 85%), hsl(217 91% 90%));
+    top: 10%;
+    left: 5%;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .paint-dot-2 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, hsl(142 76% 80%), hsl(142 76% 85%));
+    top: 60%;
+    right: 10%;
+    animation: float 8s ease-in-out infinite reverse;
+  }
+  
+  .paint-dot-3 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, hsl(217 91% 88%), hsl(142 76% 88%));
+    top: 30%;
+    right: 5%;
+    animation: pulse-glow 5s ease-in-out infinite;
+  }
+  
+  .paint-dot-4 {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, hsl(142 76% 85%), hsl(217 91% 85%));
+    bottom: 20%;
+    left: 15%;
+    animation: float 7s ease-in-out infinite;
+  }
+  
+  .paint-dot-5 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, hsl(217 91% 90%), hsl(142 76% 90%));
+    top: 15%;
+    left: 70%;
+    animation: rotate-slow 30s linear infinite;
   }
 }
 
